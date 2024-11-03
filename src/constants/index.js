@@ -196,7 +196,7 @@ export const navLinks = [
     {
       id: 1,
       name: 'ZScaler',
-      pos: 'Associate Software Developer Engineer',
+      pos: 'Associate Software Development Engineer',
       duration: 'Sep 2024 - Present',
       title: "Zscaler is a Cloud Network Security company providing robust solutions to migrate a business' Security needs from on-premise to Cloud easily and effectively.",
       subtitle: "Worked on robust config syncing mechanism of multiple organizations across different clouds",
