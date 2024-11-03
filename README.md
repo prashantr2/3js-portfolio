@@ -2,6 +2,8 @@
 
 This is a personal portfolio website built with React, showcasing my projects, work experience, and skills. The website is organized into several sections, each providing a unique look at my background and the technologies I work with.
 
+- Check out the live portfolio here: https://my-3js-portfolio.netlify.app/
+
 ## Overview
 
 The portfolio includes the following sections:
