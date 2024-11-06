@@ -74,7 +74,7 @@ export default function About() {
                         />
                     </div>
                     <div>
-                       <p className="grid-headtext">I work remotely across most timezones</p> 
+                       <p className="grid-headtext">I can work remotely across most timezones</p> 
                        <p className="grid-subtext">I'm based in India, with remote work available</p>
                        <a href="#contact">
                            <Button name="Contact Me" isBeam containerClass="mt-10 w-full" />
@@ -97,7 +97,7 @@ export default function About() {
                     <div className="space-y-2 flex flex-col w-full items-center">
                        <p className="grid-headtext">Contact me</p> 
                        <button className="copy-container" onClick={handleCopy} >
-                          <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg' } />
+                          <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg' } className={!hasCopied && 'hover:animate-bounce'} />
                        </button>
                        <p className="w-full text-white text-sm text-center">{ hasCopied ? 'Copied prashantrawat2mx@gmail.com': 'Copy Email'}</p>
                     </div>

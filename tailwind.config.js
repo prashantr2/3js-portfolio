@@ -3,6 +3,14 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      dropShadow: {
+        'terminal-green': '0 0 2px green',
+        'terminal-red': '0 0 2px red',
+        'terminal-yellow': '0 0 2px yellow'
+      },
+      minWidth: {
+        '2/3': '75%',
+      },
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
       },

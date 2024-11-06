@@ -186,8 +186,8 @@ export const navLinks = [
       deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
       deskPosition: isMobile ? [0.4, -4.5, 0] : [0.4, -6, 0],
       cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [4, 4, 0] : isTablet ? [4, 4, 0] : [8, 3, 0],
+      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-20, 10, 0],
       targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
   };
@@ -199,7 +199,7 @@ export const navLinks = [
       pos: 'Associate Software Development Engineer',
       duration: 'Sep 2024 - Present',
       title: "Zscaler is a Cloud Network Security company providing robust solutions to migrate a business' Security needs from on-premise to Cloud easily and effectively.",
-      subtitle: "Worked on robust config syncing mechanism of multiple organizations across different clouds",
+      subtitle: "",
       icon: '/assets/ZS.D.svg',
       animation: 'victory',
     },
@@ -208,8 +208,8 @@ export const navLinks = [
       name: 'ZScaler',
       pos: 'Engineering Intern',
       duration: 'Jun 2023 - Aug 2024',
-      title: "Worked on automating the updation of SSL Certificates and DB migrations on the nodes",
-      subtitle: "Had proficient interaction with Linux, PostgreSQL, TCP/IP Stack, Python at an advanced level",
+      title: "Worked as an Engineering Intern at Zscaler",
+      subtitle: "",
       icon: '/assets/ZS.D.svg',
       animation: 'clapping',
     }

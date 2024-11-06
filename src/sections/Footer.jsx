@@ -9,13 +9,13 @@ export default function Footer() {
             <p>Privacy Policy</p>
         </div>
         <div className="flex gap-3">
-            <a target="_blank" href="https://github.com/pacifier121" className="social-icon">
+            <a target="_blank" href="https://github.com/pacifier121" className="hover:invert hover:animate-bounce social-icon">
                 <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
             </a>
-            <a target="_blank" href="https://x.com/_Lemon_Slayer_" className="social-icon">
+            <a target="_blank" href="https://x.com/_Lemon_Slayer_" className="hover:invert hover:animate-bounce social-icon">
                 <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
             </a>
-            <a target="_blank" href="https://www.instagram.com/__prashantr__" className="social-icon">
+            <a target="_blank" href="https://www.instagram.com/__prashantr__" className="hover:invert hover:animate-bounce social-icon">
                 <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
             </a>
         </div>
