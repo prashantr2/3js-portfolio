@@ -46,16 +46,16 @@ export default function Contact() {
     msgRef.current.style.display = 'block';
     setTimeout(() => {
         msgRef.current.style.display = 'none';
-    }, 5000)
+    }, 8000)
   }
 
   return (
-    <section className="c-space my-20" id="contact">
+    <section className="col-start-1 col-span-4 lg:col-span-3" id="contact">
         <div className="h-fit flex items-center justify-center flex-col min-w-full">
             {/* <img src="/assets/terminal.png" alt="terminal-bg" className="w-fit h-96 left-1/4" /> */}
             {/* <div className="contact-container p-16 rounded-3xl bg-[url('/assets/terminal.png')] bg-no-repeat bg-cover"> */}
-            <div className="contact-container min-w-2/3 py-16 rounded-2xl border border-gray-700 bg-black-200">
-                <div ref={msgRef} className="hidden rounded-2xl text-white absolute right-10 p-2 border border-white-500">
+            <div className="contact-container min-w-2/3 md:min-w-full py-16 rounded-2xl border border-gray-700 bg-black-200">
+                <div ref={msgRef} className="hidden rounded-2xl text-black bg-white absolute border-black-100 outline-white right-10 p-2 border">
                 </div>
                 <div className="absolute top-0 left-0 rounded-t-2xl w-full h-6 bg-gradient-to-r from-black-300 via-white-600 to-black-300 flex gap-1 items-center px-3">
                     <div className="rounded-full h-2 w-2 bg-red-500 drop-shadow-terminal-red" />

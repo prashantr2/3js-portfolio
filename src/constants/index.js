@@ -214,3 +214,17 @@ export const navLinks = [
       animation: 'clapping',
     }
   ];
+
+  export const skills = [
+    { id: 1, name: 'C++', imageUrl: 'cpp.png' },
+    { id: 2, name: 'Express', imageUrl: 'express.png' },
+    { id: 3, name: 'Docker', imageUrl: 'docker.png' },
+    { id: 4, name: 'Python', imageUrl: 'python.png' },
+    { id: 5, name: 'Bash', imageUrl: 'bash.png' },
+    { id: 6, name: 'TailwindCSS', imageUrl: 'tailwindcss.png' },
+    { id: 7, name: 'TypeScript', imageUrl: 'typescript.png' },
+    { id: 8, name: 'React', imageUrl: 'react.svg' },
+    { id: 9, name: 'Node.js', imageUrl: 'node.png' },
+    { id: 10, name: 'MongoDB', imageUrl: 'mongodb.png' },
+    { id: 11, name: 'JavaScript', imageUrl: 'js.png' },
+  ]
