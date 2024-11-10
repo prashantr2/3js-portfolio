@@ -1,10 +1,15 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Globe from 'react-globe.gl'
 import Button from '../components/Button'
 
 export default function About() {
   const [hasCopied, setHasCopied] = useState(false);
   const myEmail = 'prashantrawat2mx@gmail.com'
+  const globeRef = useRef();   
+
+  useEffect(() => {
+    globeRef.current.pointOfView({ lat: 10, lng: 70 });
+  }, []);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(myEmail)
@@ -59,7 +64,7 @@ export default function About() {
             <div className="col-span-1 xl:row-span-4">
                 <div className="grid-container">
                     <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-                        <Globe height={326} width={326} backgroundColor="rgba(0,0,0,0)"
+                        <Globe ref={globeRef} height={326} width={326} backgroundColor="rgba(0,0,0,0)"
                                backgroundImageOpacity={0.5} showAtmosphere showGraticules
                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png" 
