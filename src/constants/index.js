@@ -195,23 +195,30 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'ZScaler',
-      pos: 'Associate Software Development Engineer',
-      duration: 'Sep 2024 - Present',
-      title: "Zscaler is a Cloud Network Security company providing robust solutions to migrate a business' Security needs from on-premise to Cloud easily and effectively.",
+      name: 'BrowserStack',
+      pos: 'Backend Engineer',
+      duration: 'March 2025 - Present',
+      title: "BrowserStack is a real-device testing platform for browsers and mobile Apps",
       subtitle: "",
-      icon: '/assets/ZS.D.svg',
-      animation: 'victory',
+      icon: '/assets/browserstack.svg',
     },
     {
       id: 2,
+      name: 'ZScaler',
+      pos: 'Software Development Engineer',
+      duration: 'Sep 2024 - March 2025',
+      title: "Zscaler is a Cloud Network Security company providing robust solutions to migrate a business' Security needs from on-premise to Cloud easily and effectively.",
+      subtitle: "",
+      icon: '/assets/ZS.D.svg',
+    },
+    {
+      id: 3,
       name: 'ZScaler',
       pos: 'Engineering Intern',
       duration: 'Jun 2023 - Aug 2024',
       title: "Worked as an Engineering Intern at Zscaler",
       subtitle: "",
       icon: '/assets/ZS.D.svg',
-      animation: 'clapping',
     }
   ];
 

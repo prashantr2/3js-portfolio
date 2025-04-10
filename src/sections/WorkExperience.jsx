@@ -1,7 +1,7 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants'
-import ZscalerLogo from '../components/ZscalerLogo'
+import { ZscalerLogo, BrowserStackLogo } from '../components/OrgsLogos'
 import { OrbitControls } from '@react-three/drei'
 
 export default function WorkExperience() {
@@ -10,7 +10,7 @@ export default function WorkExperience() {
         <div className="w-full text-white-600">
             <h3 className="head-text">My Work Experience</h3>
             <div className="work-container">
-                <div className="work-canvas">
+                {/* <div className="work-canvas">
                     <Canvas camera={{ position: [0, 0, 25] }}  >
                         <OrbitControls enableZoom={false} enablePan={false} 
                                        maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2} />
@@ -18,7 +18,7 @@ export default function WorkExperience() {
                         <directionalLight position={[10, 1, 10]} intensity={5} />
                         <ZscalerLogo position={[0, 0, 0]} rotation={[0,Math.PI,Math.PI]} />
                      </Canvas>
-                </div>
+                </div> */}
                 <div className="work-content">
                     <div className="sm:py-10 py-5 sm:px-5">
                         {workExperiences.map((item, idx) => (

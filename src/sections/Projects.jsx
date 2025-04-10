@@ -5,7 +5,7 @@ import { Center, OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
 import DemoComputer from '../components/DemoComputer'
 
-import ZscalerLogo from '../components/ZscalerLogo'
+import ZscalerLogo from '../components/OrgsLogos'
 
 const projectCount = myProjects.length
 
