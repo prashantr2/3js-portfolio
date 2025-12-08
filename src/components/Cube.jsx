@@ -31,21 +31,26 @@ const Cube = ({ ...props }) => {
       });
   });
 
-  return (
-    <Float floatIntensity={2}>
-      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
-        <mesh
-          ref={cubeRef}
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube.geometry}
-          material={nodes.Cube.material}
-          onPointerEnter={() => setHovered(true)}>
-          <meshMatcapMaterial matcap={texture} toneMapped={false} />
-        </mesh>
-      </group>
-    </Float>
-  );
+  try {
+    return (
+      <Float floatIntensity={2}>
+        <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
+          <mesh
+            ref={cubeRef}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
+            material={nodes.Cube.material}
+            onPointerEnter={() => setHovered(true)}>
+            <meshMatcapMaterial matcap={texture} toneMapped={false} />
+          </mesh>
+        </group>
+      </Float>
+    );
+  }
+  catch (error) {
+    return <></>
+  }
 };
 
 useGLTF.preload('models/cube.glb');

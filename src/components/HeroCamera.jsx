@@ -12,9 +12,13 @@ export default function HeroCamera({ children, isMobile }) {
     // }
   })
 
+  try {
   return (
     <group ref={groupRef} scale={isMobile ? 1: 1.3}>
         {children}
     </group>
   )
+  } catch (error) {
+    return <></>
+  }
 }

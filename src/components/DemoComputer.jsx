@@ -17,6 +17,7 @@ export default function Model(props) {
     })
   }, [videoTxt])
 
+  try {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -1003,6 +1004,9 @@ export default function Model(props) {
       </group>
     </group>
   )
+  } catch (error) {
+    return <></>
+  }
 }
 
 useGLTF.preload('/models/computer.glb')

@@ -43,18 +43,22 @@ const Rings = ({ position }) => {
     },
   );
 
-  return (
-    <Center>
-      <group scale={0.5}>
-        {Array.from({ length: 4 }, (_, index) => (
-          <mesh key={index} ref={getRef}>
-            <torusGeometry args={[(index + 1) * 0.5, 0.1]}></torusGeometry>
-            <meshMatcapMaterial matcap={texture} toneMapped={false} />
-          </mesh>
-        ))}
-      </group>
-    </Center>
-  );
+  try {
+    return (
+      <Center>
+        <group scale={0.5}>
+          {Array.from({ length: 4 }, (_, index) => (
+            <mesh key={index} ref={getRef}>
+              <torusGeometry args={[(index + 1) * 0.5, 0.1]}></torusGeometry>
+              <meshMatcapMaterial matcap={texture} toneMapped={false} />
+            </mesh>
+          ))}
+        </group>
+      </Center>
+    );
+  } catch (error) {
+    return <></>
+  }
 };
 
 export default Rings;

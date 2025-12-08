@@ -16,9 +16,13 @@ export default function Target(props) {
     })
   })   
 
-  return (
-    <mesh {...props} ref={targetRef} rotation={[0,Math.PI/5,0]} scale={1.0}>
-        <primitive object={scene} /> 
-    </mesh>
-  )
+  try {
+    return (
+      <mesh {...props} ref={targetRef} rotation={[0,Math.PI/5,0]} scale={1.0}>
+          <primitive object={scene} /> 
+      </mesh>
+    )
+  } catch (error) {
+    return <></>
+  }
 }
